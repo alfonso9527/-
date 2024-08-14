@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using System.Collections;
 
 public class SelectionController : MonoBehaviour
 {
@@ -56,16 +57,24 @@ public class SelectionController : MonoBehaviour
         CheckGodController.PressBtn--;
     }
 
+    private IEnumerator DelayedMove(Vector2 direction)
+    {
+        yield return new WaitForSeconds(0.1f); // 延遲0.1秒
+        MoveSelection(direction);
+    }
+
     void Update()
     {
         // 檢測鍵盤方向鍵的按下事件
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             MoveSelection(Vector2.up);
+            StartCoroutine(DelayedMove(Vector2.up));
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             MoveSelection(Vector2.down);
+            StartCoroutine(DelayedMove(Vector2.down));
         }
         else if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
@@ -75,6 +84,7 @@ public class SelectionController : MonoBehaviour
         {
             MoveSelection(Vector2.right);
         }
+        _checkText = options[currentIndex].name;
     }
 
     public void GodCheck()
@@ -159,7 +169,7 @@ public class SelectionController : MonoBehaviour
         {
             currentIndex = newIndex;
             UpdateSelection();
-            _checkText = options[currentIndex].name;
+
         }
     }
 
