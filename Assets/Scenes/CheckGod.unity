@@ -963,6 +963,7 @@ GameObject:
   - component: {fileID: 191736948}
   - component: {fileID: 191736947}
   - component: {fileID: 191736949}
+  - component: {fileID: 191736950}
   m_Layer: 0
   m_Name: ScenesManager
   m_TagString: Untagged
@@ -1013,6 +1014,18 @@ MonoBehaviour:
   optionsParent: {fileID: 304311435}
   options: []
   controlButton: {fileID: 126069792}
+--- !u!114 &191736950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191736946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 924fde729c85b9a449430954b9881cac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &201462876
 GameObject:
   m_ObjectHideFlags: 0
@@ -2773,7 +2786,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 320, y: 320}
+  m_SizeDelta: {x: 270, y: 270}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &714183301
 MonoBehaviour:
@@ -6484,9 +6497,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 191736949}
-        m_TargetAssemblyTypeName: SelectionController, Assembly-CSharp
-        m_MethodName: OnCheck
+      - m_Target: {fileID: 191736950}
+        m_TargetAssemblyTypeName: SwitchScenes, Assembly-CSharp
+        m_MethodName: SwitchScenes03
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

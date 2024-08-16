@@ -354,7 +354,10 @@
 -analyzer:"C:/Program Files/Unity 2022.3.16f1c1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity 2022.3.16f1c1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/CheckGodController.cs"
+"Assets/Scripts/DragHandler.cs"
+"Assets/Scripts/DragHandlerGod.cs"
 "Assets/Scripts/SelectionController.cs"
+"Assets/Scripts/SwitchScenes.cs"
 -langversion:9.0
 
 /deterministic

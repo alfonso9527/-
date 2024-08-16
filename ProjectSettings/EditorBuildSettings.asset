@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TopScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/CheckGod.unity
+    guid: 9f7b7ffb90b164e4696853ec7987ce9c
+  - enabled: 1
+    path: Assets/Scenes/MainPage.unity
+    guid: b7317f0f12ca00d4d8f030603cdeb63f
+  - enabled: 1
+    path: Assets/Scenes/GodMain.unity
+    guid: 6025eb0234a7ca044a2edafac64a827b
   m_configObjects: {}

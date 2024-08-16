@@ -61,7 +61,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\SelectionController.cs" />
+    <Compile Include="Assets\Scripts\DragHandler.cs" />
+    <Compile Include="Assets\Scripts\DragHandlerGod.cs" />
     <Compile Include="Assets\Scripts\CheckGodController.cs" />
+    <Compile Include="Assets\Scripts\SwitchScenes.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

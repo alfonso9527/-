@@ -13,15 +13,15 @@ public class CheckGodController : MonoBehaviour
     bool OPController = true;
     void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        //if (instance == null)
+        //{
+        //    instance = this;
+        //    DontDestroyOnLoad(gameObject);
+        //}
+        //else
+        //{
+        //    Destroy(gameObject);
+        //}
         _canvas = GameObject.Find("Canvas").GetComponent<Transform>();
         _backgrand = _canvas.Find("背景").GetComponent<Transform>();
         _introduce= _backgrand.Find("介紹文本").GetComponent<Transform>();
@@ -31,6 +31,7 @@ public class CheckGodController : MonoBehaviour
         _godPage = _backgrand.Find("確認神明").GetComponent<Transform>();
         _godText = _godPage.Find("神明文本").GetComponent<Transform>();
         _godImage = _godPage.Find("神明照片").GetComponent<Transform>();
+        PressBtn = 0;
 
     }
     public void OnClick()
