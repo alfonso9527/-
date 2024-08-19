@@ -59,7 +59,7 @@ public class DragHandler : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
         }
         else if (dragImagePosition.x > buttonCenterPosition.x && dragImagePosition.x == 495 && dragImagePosition.y > 250 && dragImagePosition.y < 270)
         {
-            Debug.Log("¥k¤è");
+            SceneManager.LoadScene(4);
         }
 
         topText.gameObject.SetActive(false);
